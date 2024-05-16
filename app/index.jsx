@@ -4,10 +4,10 @@ import { Link } from 'expo-router';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>no i like this!</Text>
+    <View >
+      <Text className='poppins-Black'>no i like this!</Text>
       <StatusBar style="auto" />
-      <Link href='/profile'>Profile</Link>
+      <Link href='/home'>Profile</Link>
     </View>
   );
 }
