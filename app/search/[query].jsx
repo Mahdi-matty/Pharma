@@ -1,11 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import {useLocalSearchParams} from 'expo-router'
+import {SafeAreaView} from 'react-native-safe-area-context'
+import SearchInput from '../../components/SearchInput'
 
 const Search = () => {
+  const {query } = useLocalSearchParams()
   return (
-    <View>
-      <Text>Search</Text>
-    </View>
+    <SafeAreaView>
+      <Text>{query}</Text>
+      <SearchInput initialQuery = {query}/>
+    </SafeAreaView>
   )
 }
 
