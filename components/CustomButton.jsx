@@ -14,5 +14,3 @@ const CustomButton = ({title, handlePress, isLoading, containerStyles}) => {
 }
 
 export default CustomButton
-
-const styles = StyleSheet.create({})

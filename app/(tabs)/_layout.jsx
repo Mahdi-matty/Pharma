@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import {  Text, View } from "react-native";
 import { Tabs, Redirect } from "expo-router";
 import { Image } from "react-native";
 
@@ -93,4 +93,4 @@ const TabsLayout = () => {
 
 export default TabsLayout;
 
-const styles = StyleSheet.create({});
+

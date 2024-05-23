@@ -1,4 +1,4 @@
-import { FlatList, RefreshControl, StyleSheet, Text, View } from "react-native";
+import { FlatList, RefreshControl,  Text, View } from "react-native";
 import {useState} from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import SearchInput from "../../components/SearchInput";
@@ -68,5 +68,3 @@ const Home = () => {
 };
 
 export default Home;
-
-const styles = StyleSheet.create({});
