@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
+import { Alert } from "react-native";
 
-const [data, setData] = useState([]);
-const [loading, setLoading] = useState(true);
 const fetcher = (fn) => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
     const fetchData = async () => {
         setLoading(true);
         try {
