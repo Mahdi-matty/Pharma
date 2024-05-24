@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const FormField = ({title, value, placeholder, handleChangeText, otherStyles, ...props}) => {
+const FormField = ({title, value, placeholder, handleChangeText,  ...props}) => {
     const [showPassword, setShowPassword] = useState(false)
   return (
     <View className={`h-full ${otherStyles}`}>
@@ -11,6 +11,7 @@ const FormField = ({title, value, placeholder, handleChangeText, otherStyles, ..
         className='flex-1 text-white '
         value={value}
         placeholder={placeholder}
+        onChangeText={handleChangeText}
         placeholderTextColor='#7b7b8b'
         secureTextEntry={title === 'Password' && !showPassword}/>
         {title === 'Password' && (

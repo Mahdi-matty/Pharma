@@ -20,7 +20,8 @@ export default function App() {
         </View>
         <CustomButton 
         title='continue with email'
-        handlePress = {()=>router.push('/sign-in')}/>
+        handlePress = {()=>router.push('/sign-in')}
+        isLoading={isLoading}/>
 
       </ScrollView>
       <StatusBar backgroundColor='#161622' style='light'/>
