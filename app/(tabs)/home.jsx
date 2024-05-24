@@ -2,7 +2,6 @@ import { FlatList, RefreshControl,  Text, View } from "react-native";
 import {useState} from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import SearchInput from "../../components/SearchInput";
-import EmptyState from "../../components/EmptyState";
 import fetcher from "../../middleware/fetchData";
 
 const Home = () => {
@@ -54,12 +53,12 @@ const Home = () => {
             </View>
           </View>
         )}
-        ListEmptyComponent={() => (
-          <EmptyState
-            title="No Videos Found"
-            subtitle="No videos created yet"
-          />
-        )}
+        // ListEmptyComponent={() => (
+        //   <EmptyState
+        //     title="No Videos Found"
+        //     subtitle="No videos created yet"
+        //   />
+        // )}
 
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh}/>}
       />
